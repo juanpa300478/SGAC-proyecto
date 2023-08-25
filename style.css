@@ -256,7 +256,7 @@ la pantalla toma mas de 800 px*/
 	.menu-tabla-responsive img{width: 30%;height: auto;max-width: 20px;}
 	.menu-tabla-responsive-cabeza{background-color: #2b7ce6;margin: auto;border-radius: 0.3em;color: #fff;}
 	.menu-tabla-responsive button{width: 15%;height: 35px;border: none;border-radius: 0.3em;cursor: pointer;}
-	.menu-tabla-responsive span{margin: 0 9.3%;}
+	.contenedor-contador{text-align: center;display: inline-block;width:70%;height: 35px;padding: 0.5em;}
 	.menu-tabla-responsive-pie button{width: 30%;margin-left: 0.5em ;}
 	.datos-tabla-responsive{padding: 1em;}
 	.datos-tabla-responsive h2{margin-bottom: 1em;text-align: center;}
@@ -265,6 +265,8 @@ la pantalla toma mas de 800 px*/
 	.menu-tabla-responsive-pie button:nth-of-type(1){background-color: #11a8ce;}
 	.menu-tabla-responsive-pie button:nth-of-type(2){background-color: #0db969 ;}
 	.menu-tabla-responsive-pie button:nth-of-type(3){background-color: #e40808 ;}
+	.menu-tabla-responsive-cabeza button:nth-of-type(1){float: left;}
+	.menu-tabla-responsive-cabeza button:nth-of-type(2){float: right;}
 	.menu-tabla-responsive button:disabled{background-color: #949899;}
 
 	
