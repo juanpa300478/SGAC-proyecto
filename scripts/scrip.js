@@ -6,3 +6,9 @@ function updatemenu() {
       document.getElementById('menu').style.borderRadius = '0px';
     }
   }
+  const preventEventClick = (etiqueta) =>{
+    const element = document.getElementById(etiqueta);
+     etiqueta.addEventListener('click',(e)=>{
+        e.preventDefault();
+     })
+  }
