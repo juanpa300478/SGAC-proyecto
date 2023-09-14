@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Añadir documentos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/add-document.css">
+    <link rel="stylesheet" href="css/add-information.css">
+  </head>
+  <body>
+    <header class="sgac-header">
+      <span>SGAC</span>
+      <div class="icon-content">
+        <ul >
+          <li>
+            <i class="fa-regular fa-bell"></i>
+          </li>
+          <li>
+            <i class="fa-regular fa-circle-question"></i>
+          </li>
+          <li>
+            <i class="fa-regular fa-user"></i>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!--contenedor del la informacion-->
+    <section class="sgac-element-container">
+        <!--form of add document-->
+        <article class="form-container-document">
+            <form action="" class="form-document">
+                <h2>Ingreso de información</h2>
+                <input type="text" placeholder="Nombre del documento">
+                <select>
+                    <option value="">Tipo de documento</option>
+                    <option value="reglamento">Reglamento</option>
+                    <option value="manual-convivencia">Manual de convivencia</option>
+                    <option value="resolucion">Resolución</option>
+                    <option value="reuniones-concejo">Reuniones del concejo</option>
+                    <option value="reuniones-asamblea">Reuniones de asamblea</option>
+                  </select>
+                  <input type="date">
+                  <section class="input-link">
+                    <label for=""><i class="fa-solid fa-link"></i></label>
+                    <input type="text">
+                  </section>
+                <footer class="btn-container">
+                  <button class="btn-red">Cancelar</button>
+                  <button class="btn-blue">Enviar</button>
+                </footer>
+                
+            </form>
+        </article>
+        <!--tabla de datos documento-->
+        <article class="contenedor-tabla-datos">
+          <table class="tabla">
+            <thead class="elementos-cabecera-azul">
+              <tr>
+                <th colspan="13"><h2>Documentos</h2></th>
+              </tr>
+              <tr>
+                <th>Id</th>
+                <th>Nombre documento</th>
+                <th>Tipo</th>
+                <th>Fecha</th>
+                <th>Link</th>
+                <th colspan="3"></th>
+              </tr>
+            </thead>
+            <tbody class="estilo-color-entrelazado">
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                  <button class="btn-tabla btn-agregar">Agregar inquilino</button>
+                </td>
+                <td>
+                  <button class="btn-tabla btn-modificar">Modificar</button>
+                </td>
+                <td><button class="btn-tabla btn-eliminar">Eliminar</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+        <!--tabla de datos responsive-->
+      <article class="contenedor-tabla-responsive">
+        <div class="tabla-responsive">
+          <header>
+            <nav class="menu-tabla-responsive menu-tabla-responsive-cabeza">
+              <button><i class="fa-solid fa-arrow-left"></i></button>
+              <div class="contenedor-contador">
+                <p>1 de 5</p>
+              </div>
+              <button>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </nav>
+          </header>
+          <section class="datos-tabla-responsive">
+            <h2>Documentos</h2>
+            <p>Id: <span></span></p>
+            <p>Nombre documento: <span></span></p>
+            <p>Tipo: <span></span></p>
+            <p>Link: <span></span></p>
+          </section>
+          <footer>
+            <nav class="menu-tabla-responsive menu-tabla-responsive-pie">
+              <button>
+                <i class="fa-solid fa-file-circle-plus"></i>
+              </button>
+              <button>
+                <i class="fa-solid fa-file-circle-check"></i>
+              </button>
+              <button>
+                <i class="fa-solid fa-file-circle-xmark"></i>
+              </button>
+            </nav>
+          </footer>
+        </div>
+      </article>
+    </section>
+    <!--codigo de el menu-->
+    <footer class="menu-footer">
+      <nav id='menu'>
+        <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+        <ul>
+          <li><a href='index.html'>Inicio</a></li>
+          <li><a class='dropdown-arrow' href='http://'>Administración</a>
+            <ul class='sub-menus'>
+              <li><a href='search-information.html'>Buscar información</a></li>
+              <li><a href='add-information.html'>Agregar información</a></li>
+              <li><a href='add-document.html'>Añadir documentos</a></li>
+              <li><a href='fines.html'>Multas</a></li>
+            </ul>
+          </li>
+          <li><a class='dropdown-arrow' href='http://'>Cartera</a>
+            <ul class='sub-menus'>
+              <li><a href='http://'>Services 1</a></li>
+              <li><a href='http://'>Services 2</a></li>
+              <li><a href='http://'>Services 3</a></li>
+            </ul>
+          </li>
+          <li><a href='reservation.html'>Reservaciones</a></li>
+        </ul>
+      </nav>
+    </footer>
+    <script src="scripts/scrip.js"></script>
+  </body>
+</html>
