@@ -9,8 +9,8 @@ function updatemenu() {
   //funcion para abrir el submenu y cerralo(hubiera sido mas facil utilizar classList.toggle)
   //pero por especificidad en el menu no dejaba que utilizara la clase
   const menuMove =()=>{
-  let found = true;
   document.querySelectorAll('.dropdown-arrow').forEach(element => {
+    element.addEventListener("click",(e)=>{e.preventDefault()})
     element.addEventListener("touchstart",(e)=>{
       e.preventDefault();
       if(element.nextElementSibling.getAttribute('style') == null){
