@@ -10,6 +10,8 @@ html{
 }
 body{
 	--color-main: rgb(65, 134, 247);
+	--color-delete: #f70000;
+	--color-modified: #04a16d;
 	background-color: rgb(255, 255, 255);
 	display: flex;
 	flex-direction: column;
@@ -18,18 +20,20 @@ body{
 /*contenedro cuerpo del documento*/
 .sgac-element-container{
 	background-color: rgb(207, 207, 207);
-	width: 60%;
+	width: 80%;
 	margin: auto;
 	border: thin solid black;
 	border-radius: 0.3rem ;
 	padding: 0.6rem;
-	margin-top: 1rem;
-	margin-bottom: 1rem;
+	margin-top: 5rem;
+	margin-bottom: 5rem;
 }
 /* cabecera*/
 .sgac-header{
     background-color: var(--color-main);
 	display: grid;
+	position: fixed;
+	top: 0;
     width: 100%;
     height: 3.5em;
 	color: #fff;
@@ -60,9 +64,85 @@ body{
 	cursor: pointer;
 	border-radius: .3rem;
 }
+/*clase para botones*/
+.btn{
+	border: none;
+    border-radius: .3rem;
+    color: #fff;
+    width: max-content;
+    height: min-content;
+}
+.btn a{
+    text-decoration: none;
+    color: inherit;
+    padding: .5rem;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: transparent;
+}
+.btn-blue{
+	background-color: var(--color-main);
+}
+.btn-blue:hover{
+	color: var(--color-main);
+	box-shadow: 1px 1px 5px var(--color-main);
+}
+.btn-red{
+	background-color: var(--color-delete);
+}
+.btn-red:hover{
+	color: var(--color-delete);
+	box-shadow: 1px 1px 5px var(--color-delete);
+}
+.btn-green{
+	background-color: var(--color-modified);
+}
+.btn-green:hover{
+	color: var(--color-modified);
+	box-shadow: 1px 1px 5px var(--color-modified);
+}
+.btn-transparent{
+	background-color: transparent;
+	color: var(--color-main);
+	border:thin solid var(--color-main);
+}
+.btn-transparent:hover{
+	box-shadow: 1px 1px 5px #000;
+}
+/*botones para formulario*/
+.btn-form{
+	width: 40%;
+}
+.btn-gray{
+	background-color: #3b3939;
+}
+.btn-gray:hover{
+	color: #3b3939;
+	box-shadow: 1px 1px 5px #3b3939;
+}
+.btn-yellow{
+	background-color: #ecd823;
+	color: #000;
+}
+.btn-yellow:hover{
+	box-shadow: 1px 1px 5px #ecd823;
+}
+.btn-blueskill{
+	background-color: #128f8f;
+}
+.btn-blueskill:hover{
+	color: #128f8f;
+	box-shadow: 1px 1px 5px #128f8f;
+}
 /*estylos del menu*/
 .menu-footer{
-	margin-top: auto;
+	position: fixed;
+	width: 100%;
+	bottom: 0;
 }
 #menu {
 	background: var(--color-main);
@@ -123,8 +203,8 @@ body{
 #menu ul.sub-menus{
 	height: auto;
 	overflow: hidden;
-	width: 170px;
-	background: var(--color-main);
+	width:16rem;
+	background: #5a5959e5;
 	position: absolute;
 	z-index: 99;
 	display: none;
@@ -145,6 +225,165 @@ body{
 	background: #F2F2F2;
 	color: #444444;
 }
+/*estilos de la botonera*/
+.button-menu-pages{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	justify-content: space-around;
+	height: 8rem;
+}
+.container-menu-pages{
+	margin-top: 1rem;
+}
+/*estillos de la pagina de busqueda*/
+.contenedor-buscador{
+    border-bottom: thin solid rgb(255, 255, 255);
+	padding-bottom: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.contain-button-add{
+	display: flex;
+	justify-items: center;
+	justify-content: flex-start;
+    margin-top: .5rem;
+    padding: .3rem;
+    border-radius: .5rem;
+    background-color: rgb(238, 235, 235);
+}
+.buscador {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.3rem;
+    width:100%;
+    background-color: rgb(238, 235, 235);
+    overflow: hidden;
+    margin: auto;
+    height: auto;
+    padding: .5rem;
+    color: #868686;
+}
+.buscador select,
+.buscador input,
+.buscador button{
+    border: none;
+    outline: none;
+    background-color: rgb(236, 232, 232);
+    color: inherit;
+}
+.buscador select{
+    border-right: thin solid #fff;
+    flex: 1 1 5%;
+}
+.buscador input[type="text"]{
+    padding-left: 1rem;
+    flex: 1 1 80%;
+}
+.buscador button{
+    flex: 1 0 2rem;
+}
+.buscador button[type="reset"]{
+    border-left: thin solid #fff;
+    margin-left: auto;
+    
+}
+.buscador button:hover{
+    cursor: pointer;
+}
+.buscador input[type="text"]:placeholder-shown +  button[type="reset"]{
+    opacity: 0;
+    transition: .2s;
+   
+}
+.add-user > section{
+    width: 70%;
+}
+@media screen and (max-width: 800px) {
+    .buscador{width: 100%;}
+}
+/*estilos del formulario*/
+/* estilos del formuario formulario*/
+.container-form{
+	width: 100%;
+	background-color: #a7a6a680;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	border-radius: .3rem;
+}
+.form-add-data{
+	margin-top: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.form-add-data > select{
+	appearance: none;
+}
+.form-add-data > input,select,textarea{
+	border: none;
+	outline: none;
+	resize: none;
+	padding-left: .5rem;
+}
+.form-add-data > input,select{
+	height: 1.5rem;
+}
+.form-add-data > *{
+	margin-top: 1rem;
+}
+.container-form-button{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	justify-content: space-evenly ;
+	margin-top: 1rem;
+}
+.container-form-button > button{
+	height: 2rem;
+	min-width: min-content;
+	width: 6rem;
+
+}
+/*estilos tabla de datos propietario*/
+.contenedor-tabla-datos{
+	margin:auto;
+	overflow-x:scroll;
+	margin-top: 1rem;
+}
+.tabla{
+	border-collapse: collapse;
+	border-radius:.3rem;
+	margin: auto;
+	margin-top: 1rem;
+	overflow: hidden;
+	width: 100%;
+	
+}
+.contenedor-tabla-datos h2{
+	font-weight: normal;
+	color: #3b3939;
+}
+.tabla th,td{
+	padding: .5rem;
+}
+.elementos-cabecera-azul{
+	background-color: #2b7ce6;
+	border-color: #2b7ce6;
+	color: #fff;
+}
+.estilo-color-entrelazado tr{
+	background-color: #d7e6ee;
+	border-color: #d7e6ee;
+}
+.tabla tr{
+	height: 45px;
+}
+
 @media screen and (max-width: 800px){
 	#menu {position:relative}
 	#menu ul {background: var(--color-main);position:absolute;bottom:100%;right:0;left:0;z-index:3;height:auto;display: none;}
@@ -160,6 +399,7 @@ body{
 	/*estyle of header*/
 	.icon-content{margin-right: 1rem;}
 	/*estilos del contenedor principal*/
-	.sgac-element-container{width: 95%;margin-top: 2rem;margin-bottom: 2rem;}
+	.sgac-element-container{width: 95%;margin-top: 5rem;margin-bottom: 5rem;}
+	
 }
 

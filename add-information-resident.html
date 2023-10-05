@@ -3,16 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Crear Propietario</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Crear Inquilino</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/add-information.css">
   </head>
   <body>
     <header class="sgac-header">
       <span>SGAC</span>
       <div class="icon-content">
-        <ul >
+        <ul>
           <li>
             <i class="fa-regular fa-bell"></i>
           </li>
@@ -29,67 +34,58 @@
     <section class="sgac-element-container">
       <!--formulario-->
       <section class="container-form">
-        <h2>Crear Propietario</h2>
+        <h2>Crear Inquilino.</h2>
         <form class="form-add-data" action="">
           
-            <label for="np">N° del apartamento.</label>
-            <input id="np" name="n_apartamento" type="text" />
+          <label for="np">N° del apartamento.</label>
+          <input id="np" name="n_apartamento" type="text" />
+      
+          <label for="ti">Torres o interiores.</label>
+          <input id="ti" name="to_interiores" type="text" />
+            <label for="np">Tipo</label>
+            <select id="np" name="tipo" >
+              <option value="">--Seleciona un tipo--</option>
+              <option value="">beneficiario</option>
+            </select>
         
-            <label for="ti">Torres o interiores.</label>
-            <input id="ti" name="to_interiores" type="text" />
-         
-            <label for="cp">Cedula del propietario.</label>
-            <input id="cp" name="c_propietario" type="text" />
-        
-            <label for="nombre">Nombres del propietario.</label>
-            <input id="nombre" name="nombre" type="text" />
-        
-            <label for="apellido">Apellidos del propietario.</label>
-            <input id="apellido" name="apellido" type="text" />
-         
-            <label for="telefono">Telefono.</label>
-            <input id="telefono" name="Telefono" type="number" />
-          
-            <label for="Correo">Correo.</label>
-            <input id="Correo" name="Correo" type="email" />
+            <label for="ti">Nombre completo</label>
+            <input id="ti" name="nombre-completo" type="text" />
           
             <label for="f_nacimiento">Fecha de Nacimiento.</label>
             <input id="f_nacimiento" name="f_nacimiento" type="date" />
         
-            <label for="sexo">Sexo.</label>
-            <select id="sexo" name="sexo">
-              <option value="otro">No especifico</option>
+          
+            <label for="Sexo">Sexo.</label>
+            <select id="nombre" name="sexo">
+              <option value="otro">No especifica</option>
               <option value="Hombre">Hombre</option>
               <option value="Mujer">Mujer</option>
             </select>
-        
+          
           <div class="container-form-button">
-            <button type="reset" class="btn btn-red">
-              Cancelar
+            <button type="reset" class="btn btn-red btn-form">
+              <a href="#cerrar">Cancelar</a>
             </button>
-            <button type="submit" class="btn btn-blue">
-              Enviar
+            <button type="submit" class="btn btn-blue btn-form">
+              <a href="#cerrar">Enviar</a>
             </button>
           </div>
         </form>
       </section>
-      <!--tabla de datos del propietario-->
+      <!--tabla datos del inquilino-->
       <section class="contenedor-tabla-datos">
-        <h2>Listado de Propietarios</h2>
+        <h2>Listado de Inquilinos</h2>
         <table class="tabla">
           <thead class="elementos-cabecera-azul">
             <tr>
               <th>Id</th>
               <th>Apartamento</th>
-              <th>Torres</th>
-              <th>Cedula</th>
-              <th>Nombres</th>
-              <th>Apellidos</th>
-              <th>Fecha de nacimiento</th>
-              <th>Telefomo</th>
-              <th>Correo</th>
+              <th>Torre</th>
+              <th>Tipo</th>
+              <th>Nombres completos</th>
+              <th>Fecha nacimiento</th>
               <th>Sexo</th>
-              <th colspan="3"></th>
+              <th colspan="2"></th>
             </tr>
           </thead>
           <tbody class="estilo-color-entrelazado">
@@ -101,17 +97,10 @@
               <td></td>
               <td></td>
               <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td>
-                <button class="btn btn-transparent"><a href="add-information-resident.html">Ver</a></button>
               <td>
                 <button class="btn btn-green"><a href="">Modificar</a></button>
               </td>
-              <td>
-                <button class="btn btn-red"><a href="">Eliminar</a></button>
-              </td>
+              <td><button class="btn btn-red"><a href="">Eliminar</a></button></td>
             </tr>
           </tbody>
         </table>
