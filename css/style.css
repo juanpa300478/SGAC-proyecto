@@ -300,9 +300,6 @@ body{
     transition: .2s;
    
 }
-.add-user > section{
-    width: 70%;
-}
 @media screen and (max-width: 800px) {
     .buscador{width: 100%;}
 }
@@ -329,6 +326,7 @@ body{
 	outline: none;
 	resize: none;
 	padding-left: .5rem;
+	width: 100%;
 }
 .form-add-data > input,select{
 	height: 1.5rem;
