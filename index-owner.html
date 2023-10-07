@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header class="sgac-header">
+      <span>SGAC</span>
+      <div class="icon-content">
+        <ul >
+          <li>
+            <i class="fa-regular fa-bell"></i>
+          </li>
+          <li>
+            <i class="fa-regular fa-circle-question"></i>
+          </li>
+          <li>
+            <i class="fa-regular fa-user"></i>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!--contenedor del la informacion-->
+    <section class="sgac-element-container">
+      <section class="container-menu-pages">  
+        <h3>Bienvenidos al Sistema de Gestión para Conjuntos Residenciales</h3>
+        <hr>
+        <section class="button-menu-pages">
+          <div>
+            <button class="btn btn-blue"><a href="add-information.html">Crear Propietario</a></button>
+            <button class="btn btn-gray"><a href="search-information.html">Busqueda</a></button>
+          </div>
+          <div>
+            <button class="btn btn-green"><a href="fines.html">Crear Multa</a></button>
+            <button class="btn btn-yellow"><a href="reservation.html">Reserva zonas comunes</a></button>
+          </div>
+          <button class="btn btn-blueskill"><a href="add-document.html">Documentación Institucional</a></button>
+        </section>
+      </section>
+    </section>
+    <!--codigo de el menu-->
+    <footer class="menu-footer">
+      <nav id='menu'>
+        <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+        <ul>
+          <li><a href='index.html'>Inicio</a></li>
+          <li><a id="open-sub-menu" class="dropdown-arrow" href="">Administración</a>
+            <ul class='sub-menus'>
+              <li><a href='search-information.html'>Buscar Propietarios</a></li>
+              <li><a href='add-information.html'>Crear Propietarios</a></li>
+              <li><a href='add-document.html'>Añadir Documentos</a></li>
+              <li><a href='fines.html'>Crear Multas</a></li>
+              <li><a href="reservation.html">Crear Reservaciones</a></li>
+            </ul>
+          </li>
+          <li><a class='dropdown-arrow' href='http://'>Propietarios</a>
+            <ul class='sub-menus'>
+              <li><a href='http://'>Generar Mes Actual</a></li>
+              <li><a href='http://'>Listado de Popietarios en Mora</a></li>
+              <li><a href='http://'>Listado de Propietarios al Dia</a></li>
+              <li><a href='http://'>Listado General</a></li>
+            </ul>
+          </li>
+          <li><a class='dropdown-arrow' href='http://'>Conserje</a>
+            <ul class='sub-menus'>
+              <li><a href='income-visitor.html'>Ingreso</a></li>
+              <li><a href='http://'>Reservar Zona Social</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+    <script src="scripts/scrip.js"></script>
+  </body>
+</html>

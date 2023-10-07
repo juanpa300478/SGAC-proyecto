@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Reservaciones</title>
+    <title>Crear Multas</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
     <header class="sgac-header">
@@ -28,29 +28,32 @@
     <section class="sgac-element-container">
       <!--formulario-->
       <section class="container-form">
-        <h2>Ingreso de Visitante</h2>
+        <h2>Crear Multa</h2>
         <form class="form-add-data" action="">
-          
-            <label for="np">N° del apartamento.</label>
+         
+            <label for="np">N° del apartamento</label>
             <input id="np" name="n_apartamento" type="text" />
-        
-            <label for="ti">Torres o interiores.</label>
+         
+            <label for="ti">Torres o interiores</label>
             <input id="ti" name="to_interiores" type="text" />
-        
-            <label for="nombre-completo">Nombres Completos</label>
-            <input id="nombre-completo" name="nombre-visitante" type="text" />
-
-            <label for="f_reservation">Fecha.</label>
-            <input id="f_reservation" name="f_reservation" type="date" />
-            <label for="hora-reserva">Hora</label>
-            <input type="time" name="hora-reserva" id="hora-reserva">
-            <label for="tipo-ingreso">Tipo de Ingreso</label>
-            <select name="tipo-ingreso" id="tipo-z">
-              <option value="">--no especificado--</option>
-            </select>
-            <label for="novedad-ingreso">Novedad</label>
-            <input type="number" name="novedad" id="novedad-ingreso" placeholder="Ingrese alguna novedad">
+         
+            <label for="cp">Link de evidencia</label>
+            <input id="cp" name="link-evidencia" type="text" />
           
+            <label for="nombre">Valor</label>
+            <input id="nombre" name="valor" type="number" />
+          
+            <label for="fecha-multa">Fecha</label>
+            <input id="fecha-multa" name="f_nacimiento" type="date" />
+          
+            <label for="tipo-multa">Tipo de multa</label>
+            <select id="tipo-multa" name="tipo-multa">
+              <option value="">--Elija tipo de multa--</option>
+            </select>
+            
+            <label for="descripcion">Descripción</label>
+            <textarea name="descripcion" id="descripcion" cols="30" rows="5"></textarea>
+
           <div class="container-form-button">
             <button type="reset" class="btn btn-red">
               Cancelar
@@ -61,21 +64,21 @@
           </div>
         </form>
       </section>
-    <!--tabla de datos documento-->
-    <section class="contenedor-tabla-datos">
-      <h2>Reservaciones</h2>
+    <!--tabla de multas-->
+    <article class="contenedor-tabla-datos">
+      <h2>Listado de Multas</h2>
       <table class="tabla">
         <thead class="elementos-cabecera-azul">
           <tr>
             <th>Id</th>
             <th>N° torre</th>
             <th>N° apartamento</th>
-            <th>Nombres Completos</th>
-            <th>Fecha</th>
-            <th>Hora</th>
             <th>Tipo</th>
-            <th>Novedad</th>
-            <th colspan="1"></th>
+            <th>Link</th>
+            <th>Fecha</th>
+            <th>Descripción</th>
+            <th>Valor</th>
+            <th colspan="3"></th>
           </tr>
         </thead>
         <tbody class="estilo-color-entrelazado">
@@ -85,17 +88,23 @@
             <td></td>
             <td></td>
             <td></td>
-            <th></th>
-            <th></th>
-            <th></th>
+            <td></td>
+            <td></td>
+            <td></td>
             <td>
-              <button class="btn btn-red"><a href="">Eliminar</a></button>
+              <button class="btn btn-blue"><a href="fines-information.html">Pagar</a></button>
+              <td>
+                <button class="btn btn-green"><a href="fines-information.html">Modificar</a></button>
+              </td>
+              <td>
+                <button class="btn btn-red"><a href="fines-information.html">Eliminar</a></button>
+              </td>
             </td>
           </tr>
         </tbody>
       </table>
-    </section>
-    </section>
+    </article>
+</section>
      <!--codigo de el menu-->
   <footer class="menu-footer">
     <nav id='menu'>

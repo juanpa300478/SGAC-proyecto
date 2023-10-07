@@ -16,10 +16,11 @@ body{
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
+	font-family: sans-serif;
 }
 /*contenedro cuerpo del documento*/
 .sgac-element-container{
-	background-color: rgb(207, 207, 207);
+	background-color: #fff;
 	width: 80%;
 	margin: auto;
 	border: thin solid black;
@@ -79,6 +80,7 @@ body{
     text-align: center;
     width: 100%;
     display: inline-block;
+	font-weight: bold;
 }
 .btn:hover{
     cursor: pointer;
@@ -381,7 +383,65 @@ body{
 .tabla tr{
 	height: 45px;
 }
-
+/*Botones de eleccion de usuario en la paginas de autenticación*/
+.container-menu-pages, .button-authentication{
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	justify-content: space-around;
+}
+.button-authentication{
+	height: 5rem;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+}
+.button-authentication > *{
+	width: 15rem;
+}
+/*imagen y fomulario de autenticacion*/
+.container-form-authentication{
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: center;
+	justify-content: space-around;
+	height: 20rem;
+	margin-top: 5rem;
+}
+.container-form-authentication img{
+	width: 100%;
+}
+.container-form-authentication > div{
+	width: 20rem;
+}
+.container-form-authentication .form{
+	width: 10rem;
+}
+.form  span{
+	font-size: .8rem;
+}
+.form > span{
+	margin-left: auto;
+	display: block;
+}
+.form  input{
+	outline: none;
+	border: thin solid;
+	height: 1.7rem;
+	border-radius: .3rem;
+	border-color: var(--color-main);
+}
+.form > form{
+	display: flex;
+	height: 14rem;
+	flex-flow: column wrap;
+	justify-content: space-around;
+	padding: .3rem;
+}
+.form  button{
+	width: 6rem;
+	height: 2rem;
+}
 @media screen and (max-width: 800px){
 	#menu {position:relative}
 	#menu ul {background: var(--color-main);position:absolute;bottom:100%;right:0;left:0;z-index:3;height:auto;display: none;}
