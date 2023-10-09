@@ -22,6 +22,14 @@ function updatemenu() {
    })
   });
 }
+const iconMove =()=>{
+  document.querySelector('.icon-user').addEventListener("touchstart",(e)=>{
+      e.preventDefault();
+      console.log()
+      document.querySelector('.icon-user').children[1].classList.toggle('sub-menu-icon-content-open')
+  });
+}
+iconMove();
 menuMove();
  
     

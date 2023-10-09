@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inicio</title>
+    <title>Ingreso Administrador</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -11,15 +11,9 @@
     <header class="sgac-header">
       <span>SGAC</span>
       <div class="icon-content">
-        <ul >
-          <li>
-            <i class="fa-regular fa-bell"></i>
-          </li>
-          <li>
-            <i class="fa-regular fa-circle-question"></i>
-          </li>
-          <li>
-            <i class="fa-regular fa-user"></i>
+        <ul>
+          <li class="icon-user">
+              <a href=""><i class="fa-regular fa-circle-question"></i> ayuda</a>
           </li>
         </ul>
       </div>
@@ -30,14 +24,14 @@
         <div class="container-button-user">
           <h2>Bienvenidos al Sistema de Gestión para Conjuntos residenciales</h2>
           <div class="button-authentication">
-            <button class="btn btn-transparent"><a href="">Ingreso de Propietarios</a></button>
-            <button class="btn btn-transparent"><a href="">Ingreso de Concerje</a></button>
+            <button class="btn btn-transparent"><a href="index-owner.html">Ingreso de Propietarios</a></button>
+            <button class="btn btn-transparent"><a href="index-vigilant.html">Ingreso de Concerje</a></button>
           </div>
         </div>
       </section>
       <hr>
       <section class="container-form-authentication">
-        <div>
+        <div class="container-image">
           <img src="assets/authentication.jpg" alt="Iniciar sesion">
         </div>
         <div class="form">
@@ -47,11 +41,14 @@
             <input type="text" id="usuario" placeholder="Digite su usuario">
             <label for="usuario">Contraseña</label>
             <input type="text" id="usuario" placeholder="Digite su contraseña">
-            <span>Olvido su contraseña</span>
+            <span>Olvido su contraseña?</span>
             <button type="submit" class="btn btn-blue">Ingresar</button>
           </form>
         </div>
-      </section>  
+      </section>
+      <footer>
+        copyright &copy; todos los derechos reservados
+      </footer> 
     </section>
     <script src="scripts/scrip.js"></script>
   </body>

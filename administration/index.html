@@ -11,15 +11,20 @@
     <header class="sgac-header">
       <span>SGAC</span>
       <div class="icon-content">
-        <ul >
-          <li>
-            <i class="fa-regular fa-bell"></i>
-          </li>
-          <li>
-            <i class="fa-regular fa-circle-question"></i>
-          </li>
-          <li>
-            <i class="fa-regular fa-user"></i>
+        <ul>
+          <li class="icon-user">
+            <a href=""><i class="fa-regular fa-user"></i> usuario</a>
+            <ul class="sub-menu-icon">
+              <li>
+                <a href=""><i class="fa-regular fa-bell"></i> notificaciones</a>   
+              </li>
+              <li>
+                <a href=""><i class="fa-regular fa-circle-question"></i> ayuda</a>
+              </li>
+              <li>
+                <a href=""><i class="fa-solid fa-xmark"></i> cerrar sesión</a>
+              </li>
+            </ul>
           </li>
         </ul>
       </div>
@@ -27,19 +32,16 @@
     <!--contenedor del la informacion-->
     <section class="sgac-element-container">
       <section class="container-menu-pages">  
-        <h3>Bienvenidos al Sistema de Gestión para Conjuntos Residenciales</h3>
-        <hr>
-        <section class="button-menu-pages">
-          <div>
+        <div class="container-button-user">
+          <h2>Bienvenidos al Sistema de Gestión para Conjuntos residenciales</h2>
+          <div class="button-authentication button-menu-index">
             <button class="btn btn-blue"><a href="add-information.html">Crear Propietario</a></button>
             <button class="btn btn-gray"><a href="search-information.html">Busqueda</a></button>
-          </div>
-          <div>
             <button class="btn btn-green"><a href="fines.html">Crear Multa</a></button>
             <button class="btn btn-yellow"><a href="reservation.html">Reserva zonas comunes</a></button>
+            <button class="btn btn-blueskill"><a href="add-document.html">Documentación Institucional</a></button>
           </div>
-          <button class="btn btn-blueskill"><a href="add-document.html">Documentación Institucional</a></button>
-        </section>
+        </div>
       </section>
     </section>
     <!--codigo de el menu-->
@@ -74,6 +76,6 @@
         </ul>
       </nav>
     </footer>
-    <script src="scripts/scrip.js"></script>
+    <script src="../scripts/scrip.js"></script>
   </body>
 </html>
