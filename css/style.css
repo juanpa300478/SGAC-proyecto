@@ -169,6 +169,36 @@ body{
 	color: #128f8f;
 	box-shadow: 1px 1px 5px #128f8f;
 }
+.btn-washapp{
+	background-color: #3ab936;
+	color: #fff;
+	margin-right: 1rem;
+	margin-left: 1rem;
+}
+.btn-washapp i{
+	display: none;
+}
+.btn-washapp:hover  i{
+	display: inline;
+}
+.btn-washapp:hover{
+	color: #3ab936;
+	box-shadow: 1px 1px 3px 1px #3ab936;
+}
+.btn-call{
+	background-color: var(--color-main);
+	color: #fff;
+}
+.btn-call i{
+	display: none;
+}
+.btn-call:hover  i{
+	display: inline;
+}
+.btn-call:hover{
+	color: var(--color-main);
+	box-shadow: 1px 1px 3px 1px var(--color-main);
+}
 /*estylos del menu*/
 .menu-footer{
 	position: fixed;
@@ -420,6 +450,9 @@ body{
 .button-menu-index{
 	height: 15rem;
 }
+.button-menu-index-owaner{
+	height: 8rem;
+}
 /*imagen y fomulario de autenticacion*/
 .container-form-authentication{
 	display: flex;
@@ -474,6 +507,16 @@ body{
 	bottom: 1rem;
 	text-align: center;
 	font-weight: bold;
+}
+/*contenedor de los botones del citofono*/
+.container-button-comunication{
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	background-color: #dddcdc;
+	padding: .5rem;
+	border-radius: .3rem;
+	margin-bottom: 1rem;
 }
 @media screen and (max-width: 800px){
 	#menu {position:relative}
