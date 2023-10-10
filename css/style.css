@@ -172,8 +172,6 @@ body{
 .btn-washapp{
 	background-color: #3ab936;
 	color: #fff;
-	margin-right: 1rem;
-	margin-left: 1rem;
 }
 .btn-washapp i{
 	display: none;
@@ -513,10 +511,22 @@ body{
 	display: flex;
 	flex-flow: row nowrap;
 	align-items: center;
-	background-color: #dddcdc;
-	padding: .5rem;
+	background-color: #c7c6c6;
 	border-radius: .3rem;
 	margin-bottom: 1rem;
+}
+.container-button-comunication > span{
+	padding: 1rem;
+}
+.container-button-comunication > div{
+	display: flex;
+	background-color: #e2e1e1;
+	flex: 1 1 auto;
+	padding: .5rem;
+	padding-left: 1rem;
+	border-top-left-radius: 1.5rem;
+	border-bottom-left-radius: 1.5rem;
+	border-left: medium solid #a7a7a7;
 }
 @media screen and (max-width: 800px){
 	#menu {position:relative}
@@ -541,5 +551,10 @@ body{
 	.icon-user{position: inherit;}
 	.icon-content{margin-right: 0; width: 7rem;}
 	.sub-menu-icon{width: 100%;}
+	/*estilos de botones*/
+	.btn-call i{display: inline;}
+	.btn-washapp i{display: inline;}
+	/*estilos de los botoones de contactar*/
+	.container-button-comunication > div{flex-direction: column;align-items: center;}
 }
 
