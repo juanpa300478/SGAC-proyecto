@@ -528,6 +528,9 @@ body{
 	border-bottom-left-radius: 1.5rem;
 	border-left: medium solid #a7a7a7;
 }
+.container-button-comunication button{
+	width: 10rem;
+}
 @media screen and (max-width: 800px){
 	#menu {position:relative}
 	#menu ul {background: var(--color-main);position:absolute;bottom:100%;right:0;left:0;z-index:3;height:auto;display: none;}
