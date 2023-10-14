@@ -10,13 +10,7 @@
   <body>
     <header class="sgac-header">
       <span>SGAC</span>
-      <div class="icon-content">
-        <ul>
-          <li class="icon-user">
-              <a href=""><i class="fa-regular fa-circle-question"></i> ayuda</a>
-          </li>
-        </ul>
-      </div>
+      <a href=""><i class="fa-regular fa-circle-question"></i> ayuda</a>
     </header>
     <!--contenedor del la informacion-->
     <section class="sgac-element-container">
@@ -37,13 +31,13 @@
         </div>
         <div class="form">
           <span>Modulo de Propietario</span>
-          <form action="">
+          <form action="" id="form-owner">
             <label for="usuario">Usuario</label>
-            <input type="text" id="usuario" placeholder="Digite su usuario">
+            <input type="text" id="user" placeholder="Digite su usuario">
             <label for="usuario">Contraseña</label>
-            <input type="text" id="usuario" placeholder="Digite su contraseña">
+            <input type="password" id="password" placeholder="Digite su contraseña">
             <span>Olvido su contraseña?</span>
-            <button type="submit" class="btn btn-blue">Ingresar</button>
+            <button onclick="autenticationUser('form-owner','propietario',12345,'owner/index.html')"  class="btn btn-blue">Ingresar</button>
           </form>
         </div>
       </section>
@@ -51,6 +45,7 @@
         copyright &copy; todos los derechos reservados
       </footer> 
     </section>
-    <script src="scripts/scrip.js"></script>
+    <script src="scripts/scrip.js">
+    </script>
   </body>
 </html>

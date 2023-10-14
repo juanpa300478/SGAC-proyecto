@@ -35,9 +35,21 @@ const iconMoveClick =()=>{
       document.querySelector('.icon-content').classList.toggle('icon-content-open')
   });
 }
+const autenticationUser =(autentication,userForm,passwordForm,direction)=>{
+  document.getElementById(autentication).addEventListener('submit',(e)=>{
+    e.preventDefault()
+    if(e.target.user.value == userForm && e.target.password.value == passwordForm){
+      alert(`el usuario ${e.target.user.value} es correcto.`);
+      location.href= direction;
+    }else{
+      alert(`el usuario ${e.target.user.value} no es correcto, por favor ingrese un usuario correcto.`);
+    }
+  })
+}
 iconMoveClick();
 menuMove();
 iconMove();
- 
+//autenticación
+
     
   
