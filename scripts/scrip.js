@@ -22,15 +22,22 @@ function updatemenu() {
    })
   });
 }
+
 const iconMove =()=>{
   document.querySelector('.icon-user').addEventListener("touchstart",(e)=>{
-      e.preventDefault();
-      console.log()
-      document.querySelector('.icon-user').children[1].classList.toggle('sub-menu-icon-content-open')
+    e.preventDefault()
+      document.querySelector('.icon-content').classList.toggle('icon-content-open')
   });
 }
-iconMove();
+const iconMoveClick =()=>{
+  document.querySelector('.icon-user').addEventListener("click",(e)=>{
+    e.preventDefault()
+      document.querySelector('.icon-content').classList.toggle('icon-content-open')
+  });
+}
+iconMoveClick();
 menuMove();
+iconMove();
  
     
   

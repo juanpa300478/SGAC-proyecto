@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Añadir documentos</title>
+    <title>Cartelera</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/style.css" />
   </head>
@@ -26,39 +29,54 @@
       </div>
     </header>
     <!--contenedor del la informacion-->
-    <section class="sgac-element-container">
-        <h2>Documentos del conjunto residencial.</h2>
-        <br>
-        <hr>
-        <!--tabla de datos documento-->
-        <article class="contenedor-tabla-datos">
-          <h2>Listado de Documentos</h2>
-          <table class="tabla">
-            <thead class="elementos-cabecera-azul">
-              <tr>
-                <th>Id</th>
-                <th>Nombre documento</th>
-                <th>Tipo</th>
-                <th>Fecha</th>
-                <th>Link</th>
-                <th colspan="1"></th>
-              </tr>
-            </thead>
-            <tbody class="estilo-color-entrelazado">
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>
-                  <button class="btn btn-blue"><a href="">Ver</a></button>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </article>
+    <section class="sgac-element-container" style="background-color: transparent; box-shadow: none;">
+       <section class="billboard-container">
+        <section class="board">
+          <section>
+            <!--tabla de mensajes-->
+            <h2>Historial de Mensajes</h2>
+      <table class="tabla table-1">
+        <thead class="elementos-cabecera-azul">
+          <tr>
+            <th>Id</th>
+            <th>Mensaje</th>
+            <th>Fecha</th>
+            <th>Enviado</th>
+          </tr>
+        </thead>
+        <tbody class="estilo-color-entrelazado">
+          <tr>
+            <td></td>
+            <td style="width: 60%;"></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="tabla table-2">
+        <thead class="elementos-cabecera-azul">
+          <tr>
+            <th>Fecha</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody class="estilo-color-entrelazado">
+          <tr>
+            <td style="width: 70%;"></td>
+            <td><button class="btn btn-transparent"><a href="#message-responsive">Ver</a></button></td>
+          </tr>
+        </tbody>
+      </table>
+      <section id="message-responsive" class="information-message">
+        <h3>Administrador</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, recusandae reiciendis? Nisi iste ea, maiores dolore, hic repellat minima reprehenderit commodi dolor eos suscipit, ipsum autem sit at voluptatum. Atque.</p>
+        <span>dd/mm/aaaa</span>
+        <button class="btn btn-red"><a href="#cerrar"><i class="fa-solid fa-xmark"></i></a></button>
+      </section>
+          </section>
         </section>
+       </section>
+    </section>
     <!--codigo de el menu-->
     <footer class="menu-footer">
       <nav id='menu'>
