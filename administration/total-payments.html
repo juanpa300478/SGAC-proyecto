@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inicio</title>
+    <title>Pagos Totales</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/style.css" />
   </head>
@@ -27,20 +27,39 @@
     </header>
     <!--contenedor del la informacion-->
     <section class="sgac-element-container">
-      <section class="container-menu-pages">  
-        <div class="container-button-user">
-          <h2>Bienvenidos al Sistema de Gestión para Conjuntos residenciales</h2>
-          <div class="button-authentication button-menu-index">
-            <button class="btn btn-blue"><a href="add-information.html">Crear Propietario</a></button>
-            <button class="btn btn-gray"><a href="search-information.html">Busqueda</a></button>
-            <button class="btn btn-green"><a href="fines.html">Crear Multa</a></button>
-            <button class="btn btn-yellow"><a href="reservation.html">Reserva zonas comunes</a></button>
-            <button class="btn btn-blueskill"><a href="add-document.html">Documentación Institucional</a></button>
-            <button class="btn btn-blueskill"><a href="aparament-information.html">Historial de Pagos</a></button>
-          </div>
-        </div>
+      <article class="title">
+        <h2>Pagos Totales</h2>
+        <h3>Cartera Total: <i class="fa-solid fa-dollar-sign"></i><span>0,00</span></h3>
+      </article>
+       <!--tabla de datos del propietario-->
+       <section class="contenedor-tabla-datos">
+        <table class="tabla">
+          <thead class="elementos-cabecera-azul">
+            <tr>
+              <th>Mes</th>
+              <th>Apartamento</th>
+              <th>Torres</th>
+              <th>Nombres</th>
+              <th>Apellidos</th>
+              <th>Valor</th>
+              <th>Estado</th>
+            </tr>
+          </thead>
+          <tbody class="estilo-color-entrelazado">
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
       </section>
     </section>
+    <button class="btn btn-red"><a href="aparament-information.html">Ir Atras</a></button>
     <!--codigo de el menu-->
     <footer class="menu-footer">
       <nav id='menu'>

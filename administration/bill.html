@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inicio</title>
+    <title>Recibo de Caja</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/style.css" />
   </head>
@@ -27,18 +27,60 @@
     </header>
     <!--contenedor del la informacion-->
     <section class="sgac-element-container">
-      <section class="container-menu-pages">  
-        <div class="container-button-user">
-          <h2>Bienvenidos al Sistema de Gestión para Conjuntos residenciales</h2>
-          <div class="button-authentication button-menu-index">
-            <button class="btn btn-blue"><a href="add-information.html">Crear Propietario</a></button>
-            <button class="btn btn-gray"><a href="search-information.html">Busqueda</a></button>
-            <button class="btn btn-green"><a href="fines.html">Crear Multa</a></button>
-            <button class="btn btn-yellow"><a href="reservation.html">Reserva zonas comunes</a></button>
-            <button class="btn btn-blueskill"><a href="add-document.html">Documentación Institucional</a></button>
-            <button class="btn btn-blueskill"><a href="aparament-information.html">Historial de Pagos</a></button>
+      <section class="bill-container">
+        <div class="header-bill">
+          Recibo de Caja Menor
+          <div>
           </div>
         </div>
+        <table border="1">
+          <tr>
+            <td>Ciudad: <span></span></td>
+            <td>Dia: <span></span></td>
+            <td>Mes: <span></span></td>
+            <td>Año: <span></span></td>
+            <td>N°: <span></span></td>
+          </tr>
+          <tr>
+            <td colspan="4">Pagado a: <span></span></td>
+            <td style="background-color: #2966eb4b; color: var(--color-main);"><i class="fa-solid fa-dollar-sign"> <span></span></i></td>
+          </tr>
+        </table>
+        <table border="1">
+          <tr>
+            <td>Concepto</td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+        </table>
+        <table border="1">
+          <tr>
+            <td>Valor (en letras)</td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+        </table>
+        <table border="1">
+          <tr>
+            <td>Código: <span></span></td>
+            <td rowspan="2">
+              <table border="1">
+                <tr><td rowspan="2" style="background-color: #2966eb4b;color: var(--color-main);">Firma de recibo <p></p></td></tr>
+                <tr></tr>
+                <tr><td>cc. <strong></strong> nit. <strong></strong> N°
+                </td></tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td style="background-color: #2966eb4b; color: var(--color-main);">Aprobado: <span></span></td>
+          </tr>
+        </table>
       </section>
     </section>
     <!--codigo de el menu-->

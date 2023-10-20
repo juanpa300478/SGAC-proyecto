@@ -29,6 +29,12 @@ body{
 	margin-bottom: 5rem;
 	box-shadow: 2px 2px 15px #000;
 }
+/*estilos para el apartado de regresar*/
+body > button{
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 1rem;
+}
 /* cabecera*/
 .sgac-header{
     background-color: var(--color-main);
@@ -80,6 +86,15 @@ body{
 }
 .sgac-header a:hover{
 	background-color: #ffffff63;
+}
+/*titulo de la pagina*/
+.title{
+	padding-top: 1rem;
+	padding-bottom: 1.5rem;
+}
+.title > h3{
+	margin-top: 1rem;
+	font-weight: lighter;
 }
 /*clase para botones*/
 .btn{
@@ -546,6 +561,48 @@ body{
 	background-color: #fff;
 	overflow-y: scroll;
 	padding: .5rem;
+}
+/*estilos de recibo de caja*/
+.bill-container{
+	width: 100%;
+	border: thin solid black;
+	padding: 1rem;
+}
+.bill-container table{
+	width: 100%;
+	border-collapse: collapse;
+	border-radius: .5rem;
+	border-color: var(--color-main);
+}
+.bill-container td{
+	padding: 0;
+}
+.bill-container tr{
+	height: 2rem;
+}
+.bill-container strong{
+	width: 1rem;
+	height: 1rem;
+	border: inherit;
+	display: inline-block;
+}
+.header-bill{
+	width: 15%;
+	text-align: center;
+	background-color: var(--color-main);
+	color: #fff;
+	height: 4rem;
+	margin-left: auto;
+	border-radius: .1rem;
+	font-weight: bold;
+	font-size: 1.2rem;
+	border: thin solid var(--color-main);
+	margin-bottom: 1rem;
+}
+.header-bill > div{
+	width: 100%;
+	height: 1.1rem;
+	background-color: #fff;
 }
 @media screen and (min-width: 800px){
 	.board .table-2,.information-message{display: none;}
