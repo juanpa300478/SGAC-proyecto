@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pagos Totales</title>
+    <title>Editar Usuarios</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/style.css" />
   </head>
@@ -20,7 +20,7 @@
             <a href=""><i class="fa-regular fa-circle-question"></i> ayuda</a>
           </li>
           <li>
-            <a href="edit-profile.html"><i class="fa-solid fa-gear"></i> editar perfiles</a>
+            <a href=""><i class="fa-solid fa-gear"></i> editar perfiles</a>
           </li>
           <li>
             <a href="../index.html"><i class="fa-solid fa-xmark"></i> cerrar sesión</a>
@@ -30,22 +30,45 @@
     </header>
     <!--contenedor del la informacion-->
     <section class="sgac-element-container">
-      <article class="title">
-        <h2>Pagos Totales</h2>
-        <h3>Cartera Total: <i class="fa-solid fa-dollar-sign"></i><span>0,00</span></h3>
-      </article>
-       <!--tabla de datos del propietario-->
-       <section class="contenedor-tabla-datos">
+      <!--formulario-->
+      <section class="container-form">
+        <h2>Actualizar Información de Administración</h2>
+        <form class="form-add-data" action="">
+          
+            <label for="id-usuario">ID</label>
+            <input id="id-usuario" name="id-usuario" type="number" disabled/>
+        
+            <label for="usuario">Usuario</label>
+            <input id="usuario" name="usuario" type="text" disabled />
+         
+            <label for="passwork">Clave</label>
+            <input id="passwork" name="passwork" type="password" />
+        
+            <label for="nombre-usuario">Nombres Completo</label>
+            <input id="nombre-usuario" name="nombre-usuario" type="text" />
+        
+        
+          <div class="container-form-button">
+            <button type="submit" class="btn btn-blue">
+              Actualizar
+            </button>
+            <button type="reset" class="btn btn-red">
+              Borrar
+            </button>
+            <button class="btn btn-red"><a href="history-pay.html">Regresar</a></button>
+          </div>
+        </form>
+      </section>
+      <!--tabla de datos del propietario-->
+      <section class="contenedor-tabla-datos">
+        <h2>Concerjes Activos <button class="btn btn-transparent"><a href="#modal"><i class="fa-solid fa-plus"></i> añadir concerje</a></button> </h2> 
         <table class="tabla">
           <thead class="elementos-cabecera-azul">
             <tr>
-              <th>Mes</th>
-              <th>Apartamento</th>
-              <th>Torres</th>
-              <th>Nombres</th>
-              <th>Apellidos</th>
-              <th>Valor</th>
-              <th>Estado</th>
+              <th>ID</th>
+              <th>Usuario</th>
+              <th>Clave</th>
+              <th colspan="2"></th>
             </tr>
           </thead>
           <tbody class="estilo-color-entrelazado">
@@ -53,16 +76,51 @@
               <td></td>
               <td></td>
               <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td><button class="btn btn-blue"><a href="">Actualizar</a></button></td>
+              <td><button class="btn btn-red"><a href="">Eliminar</a></button></td>
             </tr>
           </tbody>
         </table>
       </section>
     </section>
-    <button class="btn btn-red"><a href="aparament-information.html">Ir Atras</a></button>
+    <!--modal agregar usuario-->
+    <section id="modal" class="modal">
+      <section class="modal-body">
+        <!--formulario-->
+       <section class="container-form">
+        <h2>Crear Concerje</h2>
+        <form class="form-add-data" action="">
+          
+            <label for="np">Nombre Completo</label>
+            <input id="np" name="n_apartamento" type="text" />
+       
+            <label for="cp">Cedula</label>
+            <input id="cp" name="c_propietario" type="number" />
+
+            <label for="ti">Numero Celular</label>
+            <input id="ti" name="to_interiores" type="text" />
+
+            <label for="fe">Fecha Nacimiento</label>
+            <input id="fe" name="to_interiores" type="date" />
+        
+            <label for="nombre">Usuario</label>
+            <input id="nombre" name="nombre" type="text" />
+        
+            <label for="apellido">Contraseña</label>
+            <input id="apellido" name="apellido" type="password" />
+        
+          <div class="container-form-button">
+            <button type="submit" class="btn btn-blue">
+              Crear
+            </button>
+            <button class="btn btn-red">
+              <a href="#cerrar">Cancelar</a>
+            </button>
+          </div>
+        </form>
+      </section>
+      </section>
+    </section>
     <!--codigo de el menu-->
     <footer class="menu-footer">
       <nav id='menu'>

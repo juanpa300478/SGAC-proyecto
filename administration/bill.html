@@ -20,69 +20,73 @@
             <a href=""><i class="fa-regular fa-circle-question"></i> ayuda</a>
           </li>
           <li>
+            <a href="edit-profile.html"><i class="fa-solid fa-gear"></i> editar perfiles</a>
+          </li>
+          <li>
             <a href="../index.html"><i class="fa-solid fa-xmark"></i> cerrar sesión</a>
           </li>
         </ul>
       </div>
     </header>
     <!--contenedor del la informacion-->
-    <section class="sgac-element-container">
       <section class="bill-container">
-        <div class="header-bill">
-          Recibo de Caja Menor
-          <div>
-          </div>
+        <div>
+           <strong>Altos de Castillo</strong>
+           <strong>FACTURA</strong>
         </div>
-        <table border="1">
-          <tr>
-            <td>Ciudad: <span></span></td>
-            <td>Dia: <span></span></td>
-            <td>Mes: <span></span></td>
-            <td>Año: <span></span></td>
-            <td>N°: <span></span></td>
-          </tr>
-          <tr>
-            <td colspan="4">Pagado a: <span></span></td>
-            <td style="background-color: #2966eb4b; color: var(--color-main);"><i class="fa-solid fa-dollar-sign"> <span></span></i></td>
-          </tr>
-        </table>
-        <table border="1">
-          <tr>
-            <td>Concepto</td>
-          </tr>
-          <tr>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-          </tr>
-        </table>
-        <table border="1">
-          <tr>
-            <td>Valor (en letras)</td>
-          </tr>
-          <tr>
-            <td></td>
-          </tr>
-        </table>
-        <table border="1">
-          <tr>
-            <td>Código: <span></span></td>
-            <td rowspan="2">
-              <table border="1">
-                <tr><td rowspan="2" style="background-color: #2966eb4b;color: var(--color-main);">Firma de recibo <p></p></td></tr>
-                <tr></tr>
-                <tr><td>cc. <strong></strong> nit. <strong></strong> N°
-                </td></tr>
-              </table>
-            </td>
-          </tr>
-          <tr>
-            <td style="background-color: #2966eb4b; color: var(--color-main);">Aprobado: <span></span></td>
-          </tr>
-        </table>
+        <div>
+          <table>
+            <tr>
+              <td>Pagado a</td>
+            </tr>
+            <tr>
+              <td>Ronal Ceveriche</td>
+            </tr>
+            <tr>
+              <td>1032505406</td>
+            </tr>
+            <tr>
+              <td>Administrador</td>
+            </tr>
+          </table>
+          <table>
+            <tr>
+              <th>FACTURA #</th>
+              <th>FECHA</th>
+            </tr>
+            <tr>
+              <td>302</td>
+              <td>31/10/2023</td>
+            </tr>
+            <tr>
+              <th>TORRE #</th>
+              <th>APARTAMENTO #</th>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>101</td>
+            </tr>
+          </table>
+        </div>
+        <div>
+          <table class="big-table">
+            <tr>
+              <th>DESCRIPCIÓN</th>
+              <th>CANTIDAD</th>
+              <th>MONTO</th>
+            </tr>
+            <tr>
+              <td>servicio de administración</td>
+              <td>1</td>
+              <td>203860</td>
+            </tr>
+            <tr class="table-total">
+              <td colspan="2">TOTAL</td>
+              <td>203860</td>
+            </tr>
+          </table>
+        </div>
       </section>
-    </section>
     <!--codigo de el menu-->
     <footer class="menu-footer">
       <nav id='menu'>
@@ -100,7 +104,7 @@
           </li>
           <li><a class='dropdown-arrow' href='http://'>Propietarios</a>
             <ul class='sub-menus'>
-              <li><a href='http://'>Generar Mes Actual</a></li>
+              <li><a href='aparament-information.html'>Generar Mes Actual</a></li>
               <li><a href='late-payments.html'>Listado de Popietarios en Mora</a></li>
               <li><a href='payments-made.html'>Listado de Propietarios al Dia</a></li>
               <li><a href='total-payments.html'>Listado General</a></li>
@@ -109,7 +113,7 @@
           <li><a class='dropdown-arrow' href='http://'>Conserje</a>
             <ul class='sub-menus'>
               <li><a href='income-visitor.html'>Ingreso</a></li>
-              <li><a href='http://'>Reservar Zona Social</a></li>
+              <li><a href='reservation.html'>Crear Reservaciones</a></li>
             </ul>
           </li>
         </ul>

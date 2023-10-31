@@ -81,7 +81,7 @@ body > button{
 	transition: .2s;
 }
 .icon-content-open{
-	height: 9rem;
+	height: 12rem;
 	transition: .2s;
 }
 .sgac-header a:hover{
@@ -198,6 +198,11 @@ body > button{
 .btn-call:hover{
 	color: var(--color-main);
 	box-shadow: 1px 1px 3px 1px var(--color-main);
+}
+.btn-hover-blue:hover{
+	color: #fff;
+	background-color: var(--color-main);
+	box-shadow: 1px 1px 5px 2px #000;
 }
 /*estylos del menu*/
 .menu-footer{
@@ -378,6 +383,9 @@ body > button{
 	resize: none;
 	padding-left: .5rem;
 	width: 100%;
+}
+.form-add-data input:disabled{
+	background-color: #fff;
 }
 .form-add-data > input,select{
 	height: 1.5rem;
@@ -565,44 +573,101 @@ body > button{
 /*estilos de recibo de caja*/
 .bill-container{
 	width: 100%;
-	border: thin solid black;
 	padding: 1rem;
+	margin-top: 5rem;
+	height: 8rem;
+}
+.bill-container > div{
+	display: flex;
+	flex-flow: row nowrap;
+	align-items:flex-start;
+	justify-content: space-between;
+	margin-bottom: .5rem;
 }
 .bill-container table{
-	width: 100%;
 	border-collapse: collapse;
-	border-radius: .5rem;
-	border-color: var(--color-main);
+}
+.big-table{
+	width: 100%;
+}
+.bill-container th{
+	background-color: var(--color-main);
+	text-align: left;
+	color: #fff;
+	padding: .3rem;
 }
 .bill-container td{
 	padding: 0;
 }
-.bill-container tr{
-	height: 2rem;
-}
-.bill-container strong{
-	width: 1rem;
-	height: 1rem;
-	border: inherit;
-	display: inline-block;
-}
-.header-bill{
-	width: 15%;
-	text-align: center;
-	background-color: var(--color-main);
-	color: #fff;
-	height: 4rem;
-	margin-left: auto;
-	border-radius: .1rem;
-	font-weight: bold;
-	font-size: 1.2rem;
-	border: thin solid var(--color-main);
+.bill-container div:first-child{
+	font-size: 1.8rem;
+	color: var(--color-main);
 	margin-bottom: 1rem;
 }
-.header-bill > div{
-	width: 100%;
-	height: 1.1rem;
+.table-total td{
+	padding-top: 2rem;
+}
+/*estilos del modal*/
+.modal{
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: #0000008a;
+	z-index: 200;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	justify-content: center;
+	display: none;
+}
+.modal-body{
 	background-color: #fff;
+	width: 80%;
+}
+.modal:target{
+	display: flex;
+	transition: .2s;
+}
+/*calculadora de impuestos*/
+.calculator{
+	position: fixed;
+	bottom: 5rem;
+	background-color: #fff;
+	border: thin solid #000;
+	padding: 1rem;
+	overflow: hidden;
+	left: -15.3rem;
+	transition: .2s;
+	height: 3.8rem;
+	border-top-right-radius: .3rem;
+	border-bottom-right-radius: .3rem;
+}
+.calculator > span{
+	font-size: 1.5rem;
+}
+.calculator:hover{
+	font-size: 1rem;
+	left: 0;
+	height: auto;
+	cursor: pointer;
+}
+.calculator-open{
+	font-size: 1rem;
+	left: 0;
+	height: auto;
+}
+.calculator  form {
+	display: flex;
+	flex-flow: column nowrap;
+	margin-top: 1rem;
+}
+.calculator button{
+	height: 2rem;
+}
+.calculator button:hover{
+	cursor: pointer;
 }
 @media screen and (min-width: 800px){
 	.board .table-2,.information-message{display: none;}
@@ -629,7 +694,7 @@ body > button{
 	/*estilos del menu iconos usuarios*/
 	.sgac-header > a{margin-left: auto ;width: 8rem;margin-right: 0;}
 	.icon-content{position: absolute; top:3.5rem;background-color: var(--color-main);width: 100%; height: 0;overflow: hidden;transition: .2s; right: 0;margin-right: 0;}
-	.icon-content-open{height: 9rem;transition:.2s;}
+	.icon-content-open{height: 12rem;transition:.2s;}
 
 	/*estilos de botones*/
 	.btn-call i{display: inline;}
@@ -646,4 +711,10 @@ body > button{
 	.board .information-message:target{display: flex;}
 	.board .btn-red{position: absolute;top:0;right: 1rem;}
 }
-
+@media print{
+	body{background-color: #fff;}
+	.sgac-header, .menu-footer{display: none;}
+	.bill-container{margin: 0; padding: 0; height: auto;}
+	title{display: none;}
+	
+}
